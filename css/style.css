@@ -165,9 +165,9 @@ main:focus { outline: none; }
   z-index: -1;
   left: -.05em;
   right: -.05em;
-  bottom: .04em;
-  height: 8px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 12' preserveAspectRatio='none'%3E%3Cpath fill='%23991930' d='M3 6.2C70 4.6 150 5.6 220 4.4S285 3.4 297 3.8C299 4.4 299 7 297 7.6C260 7.6 200 9.2 140 9.4S40 10.4 4 10.2C1.5 9.8 1.5 6.8 3 6.2Z'/%3E%3C/svg%3E") no-repeat 0 0 / 100% 100%;
+  bottom: .02em;
+  height: 9px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 14' preserveAspectRatio='none'%3E%3Cpath fill='%23991930' d='M3 7.4C25 8 40 8.7 60 8.7S115 7.2 150 6.7S205 5 230 4.6S285 2.6 296 2C299 2.3 299.5 4.8 297 5.2C285 5.8 255 8 230 8.6S180 9.6 150 10.1S95 12.6 60 12.5S15 11.9 4 11.6C1 11.2 1 7.8 3 7.4Z'/%3E%3C/svg%3E") no-repeat 0 0 / 100% 100%;
 }
 .mark--draw::after {
   transform-origin: left center;
