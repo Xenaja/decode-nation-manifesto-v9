@@ -334,6 +334,8 @@ main:focus { outline: none; }
 
 .card__label { margin-bottom: 28px; }
 .card__headline { max-width: 24ch; margin-bottom: 36px; }
+/* contact question: full card width so it breaks into 2–3 even lines */
+.card__headline--wide { max-width: 36ch; }
 .card__cta { align-self: flex-start; margin-top: 12px; }
 
 /* vertical rhythm */
@@ -360,19 +362,23 @@ main:focus { outline: none; }
 
 /* a thin grey rule separates a sub-block, as in the reference */
 .divided {
-  margin-top: var(--block);
-  padding-top: var(--block);
+  margin-top: 48px;
+  padding-top: 40px;
   border-top: 1px solid var(--hairline);
 }
 .divided > .t-statement { margin-bottom: var(--stack); }
 p.divided { padding-top: 28px; margin-top: 36px; }
 
-/* plain list, thin grey rules, no markers */
-.list li {
-  padding: 14px 0;
-  border-top: 1px solid var(--hairline);
+/* plain bulleted list, spacing instead of rules */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 1.1em;
+  list-style: disc;
 }
-.list li:last-child { border-bottom: 1px solid var(--hairline); }
+.list li { padding-left: .3em; }
+.list li::marker { color: var(--secondary); }
 
 /* --------------------------------------------------------------- stations */
 
@@ -506,6 +512,7 @@ p.divided { padding-top: 28px; margin-top: 36px; }
 }
 
 .site-foot {
+  color: var(--ink);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
